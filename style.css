@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    margin: 30px auto;
+    padding: 20px 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.block {
+    width: 50%;
+}
+
+input[type='number'] {
+    display: none;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 550px;
+    height: 30px;
+    padding-left: 10px;
+    border: 1px solid rgba(81, 203, 238, 1);
+    outline: none;
+}
+
+.error {
+    box-shadow: 0 0 5px rgb(226, 23, 23);
+    border: 2px solid rgb(226, 23, 23);
+}
+
+.success {
+    box-shadow: 0 0 5px rgb(4, 163, 31);
+    border: 2px solid rgb(4, 163, 31);
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+}
+
+.btn-add {
+    border: 1px solid green;
+    color: green;
+}
+
+.edit-btn {
+    background-color: yellow;
+    color: black;
+    padding: 10px 10px;
+}
+
+.del-btn {
+    background-color: red;
+    color: white;
+}
+
+table {
+    border-spacing: 50px 10px;
+    border-collapse: separate;
+}
+
+@media screen and (max-width: 1150px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    .block {
+        width: 100%;
+    }
+    .list {
+        padding-top: 30px;
+    }
+    input {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 300px;
+        height: 30px;
+        padding-left: 10px;
+        border: 1px solid rgba(81, 203, 238, 1);
+        outline: none;
+    }
+}
